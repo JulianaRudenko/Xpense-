@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<meta name="keywords" content="Xpense, expense tracker, personal finance, budget management">
+		<meta name="description" content="Xpense - A simple and powerful expense tracker">
+		<title>Xpense</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1747034406063"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1747034406063">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header-scroll="" data-fls-header-scroll-show="" data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__logo">
+						<a href="#" class="header__logo-link">
+							<img src="./assets/img/logo.svg" alt="Logo">
+						</a>
+					</div>
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#features" class="menu__link" data-fls-scrollto-top="30" data-fls-scrollto="#features">Features</a>
+								</li>
+								<li class="menu__item">
+									<a href="#about" class="menu__link" data-fls-scrollto-top="30" data-fls-scrollto="#about">About us</a>
+								</li>
+								<li class="menu__item">
+									<a href="#pricing" class="menu__link" data-fls-scrollto-top="30" data-fls-scrollto="#pricing">Pricing</a>
+								</li>
+								<li class="menu__item">
+									<a href="#feedback" class="menu__link" data-fls-scrollto-top="30" data-fls-scrollto="#feedback">Feedback</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.js?v=1747034406063on">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+					<div data-fls-dynamic="nav, 767.98, 2" class="header__action">
+						<a href="#" class="action-link">Request a demo</a>
+					</div>
+				</div>
+			</header>
+			<main class="page page--home">
+				<section class="hero__container hero">
+					<div class="hero__content">
+						<h1 class="hero__title">Track your Expenses to Save Money</h1>
+						<div class="hero__description">
+							<p>Helps you to organize your income and expenses</p>
+						</div>
+						<div class="action-spoller">
+							<div data-fls-spollers="" class="spollers spollers--hero">
+								<details class="spollers__item">
+									<summary class="spollers__title">Try free demo</summary>
+									<div class="spollers__body">
+										<a href="#">Web</a>
+										<a href="#">iOs</a>
+										<a href="#">Android</a>
+									</div>
+								</details>
+							</div>
+							<div class="action-spoller__text">-Web,iOs,Android</div>
+						</div>
+					</div>
+					<div class="hero__image">
+						<img src="./assets/img/hero-img.svg" alt="Image">
+					</div>
+				</section>
+				<section class="overview">
+					<div class="overview__bg">
+						<div class="overview__container">
+							<div class="overview__img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/overview-img-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/overview-img-1200.webp" type="image/webp">
+									<img alt="Image" src="./assets/img/overview-img.webp">
+								</picture>
+							</div>
+						</div>
+					</div>
+					<div class="company__wrapper">
+						<div class="company__container">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/facebook-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/facebook-1200.webp" type="image/webp">
+								<img alt="Facebook" src="./assets/img/facebook.webp">
+							</picture>
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/google-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/google-1200.webp" type="image/webp">
+								<img alt="Google" src="./assets/img/google.webp">
+							</picture>
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/cocacola-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/cocacola-1200.webp" type="image/webp">
+								<img alt="Coca-Cola" src="./assets/img/cocacola.webp">
+							</picture>
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/linkedin-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/linkedin-1200.webp" type="image/webp">
+								<img alt="LinkedIn" src="./assets/img/linkedin.webp">
+							</picture>
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/samsung-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/samsung-1200.webp" type="image/webp">
+								<img alt="Samsung" src="./assets/img/samsung.webp">
+							</picture>
+						</div>
+					</div>
+				</section>
+				<section class="support section-chess" id="about">
+					<div class="support__container">
+						<div class="support__content content" data-fls-watcher="" data-fls-watcher-threshold="0.4" data-fls-watcher-margin="0px 0px -10% 0px" data-fls-watcher-once="">
+							<div class="content__lable lable-content">Alwalys online</div>
+							<h2 class="content__title title-content">Real-time support with cloud</h2>
+							<div class="content__description desc-content">
+								<p>
+									Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.
+								</p>
+							</div>
+							<a href="#" class="content__link link-content">Learn more</a>
+						</div>
+						<div class="support__img" data-fls-watcher="" data-fls-watcher-threshold="0.6" data-fls-watcher-margin="0px 0px -10% 0px" data-fls-watcher-once="">
+							<img src="./assets/img/supportimg.svg" alt="support">
+						</div>
+					</div>
+				</section>
+				<section class="free-cost section-chess">
+					<div class="free-cost__container">
+						<div class="free-cost__content content" data-fls-watcher="" data-fls-watcher-threshold="0.4" data-fls-watcher-margin="0px 0px -10% 0px" data-fls-watcher-once="">
+							<div class="content__lable lable-content">free some cost</div>
+							<h2 class="content__title title-content">Save cost for you and family</h2>
+							<div class="content__description desc-content">
+								<p>
+									Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.
+								</p>
+							</div>
+							<a href="#" class="content__link link-content">Learn more</a>
+						</div>
+						<div class="free-cost__img" data-fls-watcher="" data-fls-watcher-threshold="0.6" data-fls-watcher-margin="0px 0px -10% 0px" data-fls-watcher-once="">
+							<img src="./assets/img/free-cost.svg" alt="free-cost">
+						</div>
+					</div>
+				</section>
+				<section class="use section-chess">
+					<div class="use__container">
+						<div class="use__content content" data-fls-watcher="" data-fls-watcher-threshold="0.4" data-fls-watcher-margin="0px 0px -10% 0px" data-fls-watcher-once="">
+							<div class="content__lable lable-content">free some cost</div>
+							<h2 class="content__title title-content">Use anytime when you need</h2>
+							<div class="content__description desc-content">
+								<p>
+									Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.
+								</p>
+							</div>
+							<a href="#" class="content__link link-content">Learn more</a>
+						</div>
+						<div class="use__img" data-fls-watcher="" data-fls-watcher-threshold="0.6" data-fls-watcher-margin="0px 0px -10% 0px" data-fls-watcher-once="">
+							<img src="./assets/img/users.svg" alt="use">
+						</div>
+					</div>
+				</section>
+				<section class="product" id="features">
+					<div class="product__container">
+						<div class="product__content">
+							<h2 class="product__title">The Product we work with.</h2>
+							<div class="product__text">
+								<p>
+									Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim aumsan nisi, tincidunt vel. Enim ipsum, at quis ullamcorper eget ut.
+								</p>
+							</div>
+						</div>
+						<div class="product__cards">
+							<div class="card">
+								<div class="card__img card__img--laptop">
+									<img src="./assets/img/laptop_icon.svg" alt="laptop">
+								</div>
+								<div class="card__content">
+									<h3 class="card__title">Cross platform</h3>
+									<p class="card__text">Elit esse cillum dolore eu fugiat nulla pariatur</p>
+									<a href="#" class="card__link --icon-arrow_black"></a>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__img card__img--cloud">
+									<img src="./assets/img/cloud_icon.svg" alt="laptop">
+								</div>
+								<div class="card__content">
+									<h3 class="card__title">Cloud server</h3>
+									<p class="card__text">Elit esse cillum dolore eu fugiat nulla pariatur</p>
+									<a href="#" class="card__link --icon-arrow_black"></a>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__img card__img--kalendar">
+									<img src="./assets/img/kalendar_icon.svg" alt="laptop">
+								</div>
+								<div class="card__content">
+									<h3 class="card__title">Pure Javascript</h3>
+									<p class="card__text">Elit esse cillum dolore eu fugiat nulla pariatur</p>
+									<a href="#" class="card__link --icon-arrow_black"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="plan" id="pricing">
+					<div class="plan__container">
+						<h2 class="plan__title">Choose your flexible plan.</h2>
+						<div class="plan__cards card-plan">
+							<div class="card-plan__body">
+								<div class="card-plan__img">
+									<img src="./assets/img/briefcase_icon.svg" alt="briefcase">
+								</div>
+								<div class="card-plan__content">
+									<h3 class="card-plan__title">Starter Plan</h3>
+									<div class="card-plan__text">
+										<p>Store unlimited data</p>
+										<p>Export to pdf, xls, csv</p>
+										<p>Cloud server support</p>
+									</div>
+									<span class="card-plan__price">
+										<span class="card-plan__price-value">$9.99/</span>
+										<span class="card-plan__price-period">year</span>
+										<br>
+										<span class="card-plan__price-details">up to 3 users + 1.99 per users</span>
+									</span>
+									<a href="#" class="card-plan__btn">
+										Get this
+										<i class="button--icon-arrow_black"></i>
+									</a>
+								</div>
+							</div>
+							<div class="card-plan__body">
+								<div class="card-plan__img">
+									<img src="./assets/img/gift_icon.svg" alt="briefcase">
+								</div>
+								<div class="card-plan__content">
+									<h3 class="card-plan__title">Silver Plan</h3>
+									<div class="card-plan__text">
+										<p>Store unlimited data</p>
+										<p>Export to pdf, xls, csv</p>
+										<p>Cloud server support</p>
+									</div>
+									<span class="card-plan__price">
+										<span class="card-plan__price-value">$19.99/</span>
+										<span class="card-plan__price-period">year</span>
+										<br>
+										<span class="card-plan__price-details">up to 3 users + 1.99 per users</span>
+									</span>
+									<a href="#" class="card-plan__btn">
+										Get this
+										<i class="button--icon-arrow_black"></i>
+									</a>
+								</div>
+							</div>
+							<div class="card-plan__body">
+								<div class="card-plan__img">
+									<img src="./assets/img/book_icon.svg" alt="briefcase">
+								</div>
+								<div class="card-plan__content">
+									<h3 class="card-plan__title">Diamond Plan</h3>
+									<div class="card-plan__text">
+										<p>Store unlimited data</p>
+										<p>Export to pdf, xls, csv</p>
+										<p>Cloud server support</p>
+									</div>
+									<span class="card-plan__price">
+										<span class="card-plan__price-value">$29.99/</span>
+										<span class="card-plan__price-period">year</span>
+										<br>
+										<span class="card-plan__price-details">up to 3 users + 1.99 per users</span>
+									</span>
+									<a href="#" class="card-plan__btn">
+										Get this
+										<i class="button--icon-arrow_black"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="reviews" id="feedback">
+					<div class="reviews__container">
+						<h2 class="reviews__title">We have millions of best wishers</h2>
+						<!-- Оболонка слайдера -->
+						<div data-fls-slider="" class="reviews__slider swiper">
+							<!-- Частина слайдера, що рухається -->
+							<div class="reviews__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="reviews__slide swiper-slide">
+									<div class="swiper-slide__items swiper-slide__items--braun">
+										<div class="swiper-slide__content">
+											<p>
+												Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.
+											</p>
+										</div>
+										<div class="swiper-slide__author">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/autor1-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/autor1-1200.webp" type="image/webp">
+												<img alt="author" src="./assets/img/autor1.webp">
+											</picture>
+											<div class="swiper-slide__author-content">
+												<h3 class="swiper-slide__author-name">Cameron Williamson,</h3>
+												<span class="swiper-slide__author-position">CEO</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<div class="swiper-slide__items swiper-slide__items--yellow">
+										<div class="swiper-slide__content">
+											<p>
+												Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.
+											</p>
+										</div>
+										<div class="swiper-slide__author">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/autor2-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/autor2-1200.webp" type="image/webp">
+												<img alt="author" src="./assets/img/autor2.webp">
+											</picture>
+											<div class="swiper-slide__author-content">
+												<h3 class="swiper-slide__author-name">Cameron Williamson,</h3>
+												<span class="swiper-slide__author-position">CEO</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<div class="swiper-slide__items swiper-slide__items--blue">
+										<div class="swiper-slide__content">
+											<p>
+												Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.
+											</p>
+										</div>
+										<div class="swiper-slide__author">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/autor3-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/autor3-1200.webp" type="image/webp">
+												<img alt="author" src="./assets/img/autor3.webp">
+											</picture>
+											<div class="swiper-slide__author-content">
+												<h3 class="swiper-slide__author-name">Cameron Williamson,</h3>
+												<span class="swiper-slide__author-position">CEO</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<div class="swiper-slide__items swiper-slide__items--lightblue">
+										<div class="swiper-slide__content">
+											<p>
+												Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.
+											</p>
+										</div>
+										<div class="swiper-slide__author">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/autor4-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/autor4-1200.webp" type="image/webp">
+												<img alt="author" src="./assets/img/autor4.webp">
+											</picture>
+											<div class="swiper-slide__author-content">
+												<h3 class="swiper-slide__author-name">Cameron Williamson,</h3>
+												<span class="swiper-slide__author-position">CEO</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<div class="swiper-slide__items swiper-slide__items--orange">
+										<div class="swiper-slide__content">
+											<p>
+												Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.
+											</p>
+										</div>
+										<div class="swiper-slide__author">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/autor1-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/autor1-1200.webp" type="image/webp">
+												<img alt="author" src="./assets/img/autor1.webp">
+											</picture>
+											<div class="swiper-slide__author-content">
+												<h3 class="swiper-slide__author-name">Cameron Williamson,</h3>
+												<span class="swiper-slide__author-position">CEO</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Якщо потрібна пагінація -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section class="trial trial--custom">
+					<div class="trial__bg">
+						<div class="trial__container">
+							<h2 class="trial__title">20M+ downloaded from 32 diffrent countires</h2>
+							<div class="trial__sub-title">Try demo for 7 days with full features.</div>
+							<div class="trial__action">
+								<div data-fls-spollers="" class="spollers spollers--trial">
+									<details class="spollers__item">
+										<summary class="spollers__title spollers__title--orange">Try free demo</summary>
+										<div class="spollers__body spollers__body--white">
+											<a href="#">Web</a>
+											<a href="#">iOs</a>
+											<a href="#">Android</a>
+										</div>
+									</details>
+								</div>
+							</div>
+						</div>
+						<div class="trial__image trial__image--container-big">
+							<img src="./assets/img/trialimgleft.svg" alt="trial" class="trial__image trial__image--left">
+							<img src="./assets/img/trialimgright.svg" alt="Image" class="trial__image trial__image--right">
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__top">
+						<div class="footer__logo">
+							<img src="./assets/img/logo.svg" alt="Logo">
+						</div>
+						<div class="footer__menu-wrapper">
+							<h3 class="footer__menu-title">Links</h3>
+							<nav class="footer__menu menu-footer">
+								<ul class="menu-footer__links">
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link">Home</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link">About us</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link">Careers</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link">Pricing</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link">Features</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link">Blog</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__legal-wrapper">
+							<h3 class="footer__legal-title">Legal</h3>
+							<nav class="footer__legal legal">
+								<ul class="legal__links">
+									<li class="legal__item">
+										<a href="#" class="legal__link">Terms of use</a>
+									</li>
+									<li class="legal__item">
+										<a href="#" class="legal__link">Terms of conditions</a>
+									</li>
+									<li class="legal__item">
+										<a href="#" class="legal__link">Privecy policy</a>
+									</li>
+									<li class="legal__item">
+										<a href="#" class="legal__link">Cookie policy</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__newsletter-wrapper">
+							<h3 class="footer__newsletter-title">Newsletter</h3>
+							<div class="footer__newsletter-text">
+								<p>Over 25000 people have subscribed</p>
+							</div>
+							<div class="footer__newsletter-form">
+								<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail" class="form">
+									<input required type="email" name="form[email]" data-fls-form-errtext="Error" placeholder="Enter your E-mail" class="form__input">
+									<button type="submit" class="form__button">Subscribe</button>
+								</form>
+							</div>
+							<div class="footer__newsletter-subtext">
+								<p>We don’t sell your email and spam</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__bottom-items">
+							<a href="#" class="footer__bottom-link">Privacy &amp; Terms</a>
+							<a href="#" class="footer__bottom-link">Contact Us</a>
+						</div>
+						<div class="footer__bottom-copyright">
+							<p>Copyright &copy; 2022 xpence</p>
+						</div>
+						<div class="footer__bottom-icons">
+							<a href="https://www.facebook.com/" class="footer__bottom-icon" target="_blank">
+								<i class="--icon-facebook-icon"></i>
+							</a>
+							<a href="https://linkedin.com/" class="footer__bottom-icon" target="_blank">
+								<i class="--icon-linkedin-icon"></i>
+							</a>
+							<a href="https://twitter.com/" class="footer__bottom-icon" target="_blank">
+								<i class="--icon-twitter-icon"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
