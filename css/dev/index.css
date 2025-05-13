@@ -943,6 +943,9 @@ button.swiper-pagination-bullet {
   flex-wrap: wrap;
   gap: 1.25rem;
 }
+.company__container img{
+  max-width: 7.0625rem;	
+}
 .support__container {
   display: flex;
   flex-direction: row;
