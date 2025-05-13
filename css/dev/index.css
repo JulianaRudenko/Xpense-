@@ -923,7 +923,7 @@ button.swiper-pagination-bullet {
 }
 
 .overview__bg {
-  background: url("../assets/img/overview-bg.webp") no-repeat center center;
+  background: url("../../assets/img/overview-bg.webp") no-repeat center center;
   background-size: cover;
 }
 .overview__img {
@@ -1337,7 +1337,7 @@ i {
 
 .trial__bg {
   position: relative;
-  background: url("../assets/img/overview-bg.webp") no-repeat center center;
+  background: url("../../assets/img/overview-bg.webp") no-repeat center center;
   background-size: cover;
   min-height: 46.875rem;
 }
