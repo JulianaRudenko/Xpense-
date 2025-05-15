@@ -944,7 +944,8 @@ button.swiper-pagination-bullet {
   gap: 1.25rem;
 }
 .company__container img{
-  max-width: 7.0625rem;	
+  max-width: 7.0625rem;
+  display: block;
 }
 .support__container {
   display: flex;
